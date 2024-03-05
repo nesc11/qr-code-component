@@ -1,0 +1,86 @@
+:root {
+    /* Font family */
+    --ff-sans: "Outfit", sans-serif;
+
+    /* Font sizes */
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.125rem;
+    --fs-xl: 1.25rem;
+    --fs-2xl: 1.5rem;
+    --fs-3xl: 1.875rem;
+    --fs-4xl: 2.25rem;
+    --fs-5xl: 3rem;
+    --fs-6xl: 3.75rem;
+
+    /* Font weights */
+    --fw-r: 400;
+    --fw-b: 700;
+
+    /* COLORS */
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-gray: hsl(212, 45%, 89%);
+    --clr-gayish-blue: hsl(220, 15%, 55%);
+    --clr-dark-blue: hsl(218, 44%, 22%);
+}
+
+/* General */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font: inherit;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    font-family: var(--ff-sans);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-r);
+}
+
+main {
+    background-color: var(--clr-gray);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+
+.qr-container {
+    width: 90%;
+    max-width: 345px;
+    margin-inline: auto;
+    background-color: var(--clr-white);
+    border-radius: 20px;
+    padding: 1em;
+}
+
+.qr-container img {
+    margin-inline: auto;
+    border-radius: 20px;
+}
+
+.qr-text-container {
+    padding: 1em;
+    text-align: center;
+    color: var(--clr-gayish-blue);
+}
+
+.qr-title {
+    font-size: var(--fs-xl);
+    margin-block-end: 1em;
+    color: var(--clr-dark-blue);
+    font-weight: var(--fw-b);
+}
